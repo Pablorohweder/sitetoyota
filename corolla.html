@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Corolla - Todas as Informações</title>
+    <style>
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #eb0a1e; /* Vermelho característico da Toyota */
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #222;
+            padding: 0.8rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #eb0a1e;
+        }
+
+        /* Layout Principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #eb0a1e;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #222;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Imagem de Destaque */
+        .hero-image {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            max-height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eb0a1e;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Linha do Tempo (reutilizada do site principal) */
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline li {
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+            border-left: 4px solid #eb0a1e;
+        }
+
+        .timeline strong {
+            color: #eb0a1e;
+            font-size: 1.1rem;
+        }
+
+        /* Blocos de Ficha Técnica */
+        .ficha-tecnica {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 1.5rem 0;
+        }
+
+        .ficha-item {
+            background: #f9f9f9;
+            border-left: 4px solid #eb0a1e;
+            padding: 12px 15px;
+            border-radius: 6px;
+        }
+
+        .ficha-item strong {
+            display: block;
+            color: #eb0a1e;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        /* Botão Voltar */
+        .btn-voltar {
+            display: inline-block;
+            background: #eb0a1e;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn-voltar:hover {
+            background: #222;
+        }
+
+        /* Destaque */
+        .destaque {
+            background: #fff8f8;
+            border-left: 4px solid #eb0a1e;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #222;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Toyota Corolla</h1>
+        <p>O carro mais vendido da história da humanidade — todas as informações</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="index.html#historia">História da Toyota</a>
+        <a href="index.html#icones">Carros Icônicos</a>
+        <a href="index.html#inovacao">Inovação</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+
+        <!-- Seção: Imagem e Visão Geral -->
+        <section id="visao-geral">
+            <h2>Visão Geral</h2>
+            <div class="hero-image">
+                <img src="./imagens/corollaGRS_1.jpeg" alt="Toyota Corolla">
+            </div>
+            <p>O <strong>Toyota Corolla</strong> é o carro mais vendido da história da humanidade, sem exceção. Desde seu lançamento em 1966, já foi comercializado em <strong>mais de 150 países e regiões</strong>, com cerca de <strong>55,46 milhões de unidades</strong> vendidas até dezembro de 2024. Só no Japão, o acumulado chega a aproximadamente <strong>10,89 milhões de unidades</strong>.</p>
+            <p>No mercado americano, o Corolla estreou em 1968 e, já no ano seguinte, ultrapassou a marca de 1 milhão de unidades vendidas globalmente. Hoje, a Toyota vende cerca de <strong>1,5 milhão de Corollas por ano</strong> no mundo.</p>
+        </section>
+
+        <!-- Seção: Origem do Nome -->
+        <section id="nome">
+            <h2>Origem do Nome</h2>
+            <p>"Corolla" vem do latim e significa <strong>"coroa"</strong> — a parte mais bela da flor. Quando o nome foi escolhido em 1966, a Toyota 
+                consultou dicionários de vários idiomas e optou por esse nome elegante e internacional.</p>
+        </section>
+
+        <!-- Seção: Filosofia de Desenvolvimento -->
+        <section id="filosofia">
+            <h2>Filosofia Central: "80 Pontos "</h2>
+            <p>O desenvolvimento do Corolla sempre seguiu uma filosofia central: em uma escala de 100 pontos, atingir uma média de 
+                <strong>80 pontos</strong> em todos os quesitos, acrescentando alguns, superando assim as expectativas 
+                do cliente. Essa filosofia foi estabelecida pelo líder de desenvolvimento da primeira geração, <em>Tatsuo Hasegawa</em>, e permeia os 59 anos de 
+                evolução do Corolla.</p>
+            <div class="destaque">
+                <p><strong>Missão do Corolla:</strong> ser "um carro para a felicidade e o bem-estar de todas as pessoas do planeta".</p>
+            </div>
+        </section>
+
+        <!-- Seção: Produção Global -->
+        <section id="producao">
+            <h2>Produção Global</h2>
+            <p>A produção do Corolla é altamente localizada, atualmente em <strong>16 fábricas de 13 países/regiões</strong>. Principais polos:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>País/Região</th>
+                        <th>Fábrica</th>
+                        <th>Início da Produção</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Japão</td><td>Fábrica de Takaoka</td><td>Novembro de 1966</td></tr>
+                    <tr><td>Tailândia</td><td>Fábrica Gateway</td><td>Agosto de 1972</td></tr>
+                    <tr><td>África do Sul</td><td>Fábrica de Durban</td><td>Maio de 1975</td></tr>
+                    <tr><td>Venezuela</td><td>Fábrica de Cumaná</td><td>Abril de 1986</td></tr>
+                    <tr><td>Canadá</td><td>Fábrica de Cambridge</td><td>Novembro de 1988</td></tr>
+                    <tr><td>Paquistão</td><td>Fábrica de Karachi</td><td>Março de 1993</td></tr>
+                    <tr><td>Turquia</td><td>Fábrica de Adapazarı</td><td>Setembro de 1994</td></tr>
+                    <tr><td>Vietnã</td><td>Fábrica de Hanói</td><td>Setembro de 1996</td></tr>
+                    <tr><td><strong>Brasil</strong></td><td><strong>Fábrica de Indaiatuba</strong></td><td><strong>Agosto de 1998</strong></td></tr>
+                    <tr><td>Taiwan (China)</td><td>Fábrica de Zhongli</td><td>Março de 2001</td></tr>
+                    <tr><td>Índia</td><td>Fábrica de Bangalore</td><td>Janeiro de 2003</td></tr>
+                    <tr><td>China Continental</td><td>Tianjin (Xiqing/TEDA)</td><td>Fevereiro de 2004</td></tr>
+                    <tr><td>EUA</td><td>Fábrica do Mississippi</td><td>Outubro de 2011</td></tr>
+                </tbody>
+            </table>
+
+            <p>A <strong>fábrica brasileira</strong>, em Indaiatuba (SP), produz o Corolla desde agosto de 1998 e é um dos principais polos da América do Sul.</p>
+        </section>
+
+        <!-- Seção: História das Gerações -->
+        <section id="geracoes">
+            <h2>História das Gerações</h2>
+            <p>O Corolla já chegou à <strong>12ª geração</strong>, e cada uma delas aplicou a filosofia "80 pontos".</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Geração</th>
+                        <th>Período</th>
+                        <th>Características Principais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>1ª</strong></td><td>1966–1970</td><td>Sedã compacto de 5 lugares, 1.0L, 60 cv, posicionado entre o Publica e o Corona</td></tr>
+                    <tr><td><strong>2ª</strong></td><td>1970–1974</td><td>O Sprinter se torna linha independente; surge a versão Cupê</td></tr>
+                    <tr><td><strong>3ª</strong></td><td>1974–1979</td><td>Entre-eixos +35 mm, bitolas dianteira e traseira +40 mm cada</td></tr>
+                    <tr><td><strong>4ª</strong></td><td>1979–1983</td><td>Linhas mais retas; até 7 tipos de carroceria</td></tr>
+                    <tr><td><strong>5ª</strong></td><td>1983–1987</td><td><strong>Grande mudança:</strong> versão familiar passa de tração traseira (FR) para dianteira (FF)</td></tr>
+                    <tr><td><strong>6ª</strong></td><td>1987–1991</td><td>Tema: "sedã superior além da categoria", foco em sofisticação</td></tr>
+                    <tr><td><strong>7ª</strong></td><td>1991–1995</td><td>Dimensões ampliadas; luxo atinge o auge</td></tr>
+                    <tr><td><strong>8ª</strong></td><td>1995–2000</td><td>Foco em ecologia, segurança e custo total de propriedade; redução de até 50 kg</td></tr>
+                    <tr><td><strong>9ª</strong></td><td>2000–2006</td><td>Entrada no século XXI, design mais moderno</td></tr>
+                    <tr><td><strong>10ª</strong></td><td>2006–2013</td><td>Mercado brasileiro recebe motor flex</td></tr>
+                    <tr><td><strong>11ª</strong></td><td>2013–2019</td><td>Dimensões maiores, multimídia modernizada</td></tr>
+                    <tr><td><strong>12ª</strong></td><td>2019–atual</td><td>Plataforma <strong>TNGA</strong>; <strong>primeiro híbrido flex do mundo</strong></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção: Versões e Preços no Brasil -->
+        <section id="precos">
+            <h2>Versões e Preços no Brasil (Junho de 2026)</h2>
+            <p>O Corolla é líder absoluto no segmento de sedãs médios no Brasil, com média superior a <strong>2.200 emplacamentos/mês</strong>. Após o reajuste de junho de 2026, a faixa de preço vai de <strong>R$ 177.590 a R$ 210.090</strong>.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Versão</th>
+                        <th>Motor</th>
+                        <th>Potência</th>
+                        <th>Preço Atual (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>XEi 2.0 CVT</strong></td><td>2.0 Flex</td><td>175/177 cv</td><td>177.590</td></tr>
+                    <tr><td><strong>GLi Hybrid</strong></td><td>1.8 Flex + elétrico</td><td>122 cv (combinada)</td><td>194.790</td></tr>
+                    <tr><td><strong>Altis 2.0 CVT</strong></td><td>2.0 Flex</td><td>175/177 cv</td><td>206.790</td></tr>
+                    <tr><td><strong>GR-S 2.0 CVT</strong></td><td>2.0 Flex</td><td>175/177 cv</td><td>206.790</td></tr>
+                    <tr><td><strong>Altis Premium Hybrid</strong></td><td>1.8 Flex + elétrico</td><td>122 cv (combinada)</td><td>210.090</td></tr>
+                </tbody>
+            </table>
+
+            <div class="destaque">
+                <p><strong>Reajuste de junho/2026:</strong> aumentos entre R$ 2.600 e R$ 3.100 por versão.</p>
+            </div>
+        </section>
+
+        <!-- Seção: Ficha Técnica -->
+        <section id="ficha">
+            <h2>Ficha Técnica Detalhada — Corolla 2026</h2>
+            <p>Exemplo: versão <strong>Altis Premium 2.0 CVT</strong></p>
+
+            <h3>Motor e Desempenho</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Cilindrada</strong>2.0L</div>
+                <div class="ficha-item"><strong>Potência</strong>175 cv (gasolina) / 177 cv (etanol)</div>
+                <div class="ficha-item"><strong>Torque</strong>21,3 kgf.m (gasolina) / 21,4 kgf.m (etanol)</div>
+                <div class="ficha-item"><strong>Câmbio</strong>CVT (com modo manual)</div>
+                <div class="ficha-item"><strong>Tração</strong>Dianteira</div>
+                <div class="ficha-item"><strong>Combustível</strong>Flex (etanol/gasolina)</div>
+            </div>
+
+            <h3>Consumo (Altis Premium 2.0)</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Cidade (gasolina)</strong>11,9 km/L</div>
+                <div class="ficha-item"><strong>Estrada (gasolina)</strong>14,5 km/L</div>
+                <div class="ficha-item"><strong>Cidade (etanol)</strong>8,0 km/L</div>
+                <div class="ficha-item"><strong>Estrada (etanol)</strong>10,0 km/L</div>
+            </div>
+
+            <h3>Consumo da Versão Híbrida (melhor)</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Cidade (gasolina)</strong>Até 17,5 km/L</div>
+                <div class="ficha-item"><strong>Estrada (gasolina)</strong>Cerca de 15,2 km/L</div>
+            </div>
+
+            <h3>Dimensões e Capacidades</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Comprimento</strong>4.630 mm</div>
+                <div class="ficha-item"><strong>Largura</strong>1.780 mm</div>
+                <div class="ficha-item"><strong>Altura</strong>1.455 mm</div>
+                <div class="ficha-item"><strong>Entre-eixos</strong>2.700 mm</div>
+                <div class="ficha-item"><strong>Porta-malas</strong>470 litros</div>
+                <div class="ficha-item"><strong>Tanque de combustível</strong>50 litros</div>
+                <div class="ficha-item"><strong>Lugares</strong>5</div>
+                <div class="ficha-item"><strong>Peso</strong>1.415 kg</div>
+            </div>
+
+            <h3>Chassi e Suspensão</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Suspensão dianteira</strong>Independente, McPherson, com barra estabilizadora</div>
+                <div class="ficha-item"><strong>Suspensão traseira</strong>Independente, duplo triângulo (double wishbone), com barra estabilizadora</div>
+                <div class="ficha-item"><strong>Direção</strong>Elétrica assistida</div>
+            </div>
+        </section>
+
+        <!-- Seção: Tecnologia Híbrida -->
+        <section id="hibrido">
+            <h2>Tecnologia Híbrida</h2>
+            <p>A maior inovação da 12ª geração do Corolla no Brasil é o <strong>sistema híbrido flex (HEV Flex)</strong> — o <strong>primeiro do mundo</strong> capaz de usar etanol.</p>
+
+            <h3>Composição do sistema</h3>
+            <ul class="timeline">
+                <li><strong>Motor 1.8L flex:</strong> 101 cv</li>
+                <li><strong>Motor elétrico:</strong> 72 cv</li>
+                <li><strong>Potência combinada:</strong> 122 cv</li>
+                <li><strong>Câmbio:</strong> e-CVT</li>
+            </ul>
+
+            <div class="destaque">
+                <p><strong>Funcionamento:</strong> Recupera energia nas frenagens para recarregar a bateria; em baixas velocidades urbanas, prioriza a condução elétrica, sem necessidade de recarga externa.</p>
+            </div>
+        </section>
+
+        <!-- Seção: Segurança e Tecnologia -->
+        <section id="seguranca">
+            <h2>Segurança e Tecnologia</h2>
+            <p>O Corolla no Brasil traz de série em toda a linha o <strong>Toyota Safety Sense (TSS)</strong>, que inclui:</p>
+            <ul class="timeline">
+                <li>Sistema de pré-colisão (frenagem autônoma de emergência)</li>
+                <li>Controle de cruzeiro adaptativo (ACC)</li>
+                <li>Assistente de permanência em faixa</li>
+                <li>Farol alto automático</li>
+            </ul>
+
+            <h3>Destaques de conforto e tecnologia (versões topo)</h3>
+            <ul class="timeline">
+                <li>Central multimídia de 10 polegadas (Android Auto / Apple CarPlay)</li>
+                <li>Painel digital de 12,3 polegadas</li>
+                <li>Ar-condicionado automático dual zone</li>
+                <li>Teto solar panorâmico</li>
+                <li>Bancos em couro</li>
+                <li>Chave presencial</li>
+            </ul>
+        </section>
+
+        <!-- Seção: Família Corolla -->
+        <section id="familia">
+            <h2>Família Corolla (2026)</h2>
+            <p>Atualmente a Toyota oferece <strong>5 modelos</strong> da família Corolla no mundo:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Carroceria</th>
+                        <th>Posicionamento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Corolla</strong></td><td>Sedã</td><td>Espaço premium + tamanho ideal</td></tr>
+                    <tr><td><strong>Corolla Sport</strong></td><td>Hatchback</td><td>Esportividade e agilidade</td></tr>
+                    <tr><td><strong>Corolla Touring</strong></td><td>Perua</td><td>Grande capacidade + prazer de dirigir com baixo centro de gravidade</td></tr>
+                    <tr><td><strong>Corolla Cross</strong></td><td>SUV</td><td>"Na mosca" — versatilidade total</td></tr>
+                    <tr><td><strong>GR Corolla</strong></td><td>Hatchback</td><td>Performance Gazoo Racing, apelo selvagem</td></tr>
+                </tbody>
+            </table>
+
+            <p>O <strong>Corolla Cross</strong> foi lançado em 2021 como SUV compacto e também tem forte desempenho no Brasil, com preço inicial em torno de <strong>R$ 164.990</strong>.</p>
+        </section>
+
+        <!-- Seção: Por Que Faz Sucesso -->
+        <section id="sucesso">
+            <h2>Por Que o Corolla Faz Tanto Sucesso?</h2>
+            <ul class="timeline">
+                <li><strong>Confiabilidade:</strong> conhecido como "o carro que não quebra", com baixíssima taxa de falhas no Brasil</li>
+                <li><strong>Economia:</strong> versão híbrida chega a 17,5 km/L na cidade, líder da categoria</li>
+                <li><strong>Valor de revenda:</strong> alta retenção no mercado de usados e baixo custo de manutenção</li>
+                <li><strong>Evolução contínua:</strong> 59 anos seguindo o DNA da "mudança", cada geração responde às demandas da época</li>
+                <li><strong>Reputação global:</strong> a escolha de mais de 55 milhões de proprietários</li>
+            </ul>
+        </section>
+
+        <!-- Botão Voltar -->
+        <section style="text-align: center;">
+            <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+        </section>
+
+    </div>
+
+    
+
+</body>
+</html>

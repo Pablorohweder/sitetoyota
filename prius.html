@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Prius - Todas as Informações</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f4f9; color: #333; line-height: 1.6; }
+        header { background-color: #eb0a1e; color: #fff; padding: 2rem 0; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        nav { background-color: #222; padding: 0.8rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #eb0a1e; }
+        .container { max-width: 1100px; margin: 2rem auto; padding: 0 20px; }
+        section { background: #fff; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { color: #eb0a1e; margin-bottom: 1rem; border-bottom: 2px solid #ddd; padding-bottom: 0.5rem; }
+        h3 { color: #222; margin: 1.5rem 0 0.8rem 0; }
+        p { margin-bottom: 1rem; }
+        .hero-image { text-align: center; margin-bottom: 1.5rem; }
+        .hero-image img { max-width: 100%; max-height: 450px; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem 0; }
+        th, td { border: 1px solid #ddd; padding: 10px 12px; text-align: left; }
+        th { background-color: #eb0a1e; color: #fff; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+        .timeline { list-style: none; padding-left: 0; }
+        .timeline li { margin-bottom: 1.5rem; padding-left: 20px; border-left: 4px solid #eb0a1e; }
+        .timeline strong { color: #eb0a1e; font-size: 1.1rem; }
+        .ficha-tecnica { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin: 1.5rem 0; }
+        .ficha-item { background: #f9f9f9; border-left: 4px solid #eb0a1e; padding: 12px 15px; border-radius: 6px; }
+        .ficha-item strong { display: block; color: #eb0a1e; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 4px; }
+        .btn-voltar { display: inline-block; background: #eb0a1e; color: #fff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 1rem; transition: background 0.3s; }
+        .btn-voltar:hover { background: #222; }
+        .destaque { background: #fff8f8; border-left: 4px solid #eb0a1e; padding: 15px 20px; border-radius: 6px; margin: 1rem 0; }
+        footer { text-align: center; padding: 1.5rem; background-color: #222; color: #fff; margin-top: 2rem; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            nav a { margin: 0 8px; font-size: 0.9rem; }
+            .container { padding: 0 12px; }
+            section { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toyota Prius</h1>
+        <p>O pioneiro dos híbridos — todas as informações</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="index.html#historia">História da Toyota</a>
+        <a href="index.html#icones">Carros Icônicos</a>
+        <a href="index.html#inovacao">Inovação</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="visao-geral">
+            <h2>Visão Geral</h2>
+            <div class="hero-image">
+                <img src="./imagens/2025-toyota-prius-plug-in-hybrid-review.jpg" alt="Toyota Prius">
+            </div>
+            <p>O <strong>Toyota Prius</strong> é o <strong>primeiro carro híbrido produzido em massa do mundo</strong>, lançado em <strong>1997</strong> no Japão. Seu nome vem do latim e significa "antes" ou "à frente", representando sua posição pioneira na tecnologia híbrida.</p>
+            <p>O Prius combina um motor a combustão com um motor elétrico e baterias, resultando em <strong>baixo consumo de combustível e emissões reduzidas</strong>. Ele pavimentou o caminho para toda a indústria automotiva em direção à eletrificação.</p>
+            <div class="destaque">
+                <p><strong>Marco histórico:</strong> mais de <strong>6 milhões de unidades</strong> vendidas no mundo. A Toyota estima que o Prius evitou milhões de toneladas de CO₂ na atmosfera.</p>
+            </div>
+        </section>
+
+        <section id="nome">
+            <h2>Origem do Nome</h2>
+            <p>"Prius" vem do latim e significa <strong>"antes"</strong> ou <strong>"à frente"</strong>. O nome foi escolhido para simbolizar que o modelo chegou <em>antes</em> de seu tempo, antecipando a era dos carros híbridos.</p>
+        </section>
+
+        <section id="geracoes">
+            <h2>História das Gerações</h2>
+            <p>O Prius já chegou à <strong>5ª geração</strong>, evoluindo de um experimento ousado para um ícone da sustentabilidade.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Geração</th>
+                        <th>Período</th>
+                        <th>Características Principais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>1ª</strong></td><td>1997–2003</td><td>Primeiro híbrido em massa do mundo; lançado no Japão, chegou aos EUA em 2000</td></tr>
+                    <tr><td><strong>2ª</strong></td><td>2003–2009</td><td>Design icônico em formato de "gota"; popularização global</td></tr>
+                    <tr><td><strong>3ª</strong></td><td>2009–2015</td><td>Motor 1.8L; consumo ainda melhor; líder absoluto em vendas</td></tr>
+                    <tr><td><strong>4ª</strong></td><td>2015–2022</td><td>Design mais ousado; plataforma TNGA; opção Plug-in (Prime)</td></tr>
+                    <tr><td><strong>5ª</strong></td><td>2022–atual</td><td>Design esportivo e elegante; PHEV com 223 cv; autonomia elétrica de até 70 km</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="producao">
+            <h2>Produção Global</h2>
+            <p>O Prius é produzido principalmente no Japão, mas já foi montado em outros países ao longo de sua história.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>País</th>
+                        <th>Fábrica</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Japão</td><td>Toyota City (Aichi)</td><td>Produção principal desde 1997</td></tr>
+                    <tr><td>China</td><td>Changchun</td><td>Produção local para o mercado chinês</td></tr>
+                    <tr><td>Tailândia</td><td>Gateway</td><td>Montagem para o sudeste asiático</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="precos">
+            <h2>Versões e Preços</h2>
+            <p>No Brasil, o Prius não é mais vendido oficialmente desde 2021, mas continua sendo um ícone global. Em outros mercados, a linha 2026 oferece:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Versão</th>
+                        <th>Sistema</th>
+                        <th>Potência</th>
+                        <th>Preço (referência EUA)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Prius HEV</strong></td><td>Híbrido convencional</td><td>194 cv</td><td>~ US$ 28.000</td></tr>
+                    <tr><td><strong>Prius PHEV (Prime)</strong></td><td>Híbrido plug-in</td><td>223 cv</td><td>~ US$ 33.000</td></tr>
+                </tbody>
+            </table>
+
+            <div class="destaque">
+                <p><strong>Nota:</strong> os valores são apenas referência para o mercado americano. No Brasil, o modelo saiu de linha em 2021.</p>
+            </div>
+        </section>
+
+        <section id="ficha">
+            <h2>Ficha Técnica Detalhada — Prius 2026</h2>
+            <p>Exemplo: versão <strong>Prius PHEV (Plug-in Hybrid)</strong></p>
+
+            <h3>Motor e Desempenho</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Motor a combustão</strong>2.0L Dynamic Force</div>
+                <div class="ficha-item"><strong>Motor elétrico</strong>Síncrono de ímã permanente</div>
+                <div class="ficha-item"><strong>Potência combinada</strong>223 cv</div>
+                <div class="ficha-item"><strong>Câmbio</strong>e-CVT</div>
+                <div class="ficha-item"><strong>Tração</strong>Dianteira (opção AWD-i)</div>
+                <div class="ficha-item"><strong>Bateria</strong>Lítio-íon</div>
+            </div>
+
+            <h3>Consumo e Autonomia</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Consumo combinado</strong>Até 26 km/L (HEV)</div>
+                <div class="ficha-item"><strong>Autonomia elétrica</strong>Até 70 km (PHEV)</div>
+                <div class="ficha-item"><strong>0-100 km/h</strong>6,7 s (PHEV)</div>
+            </div>
+
+            <h3>Dimensões e Capacidades</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Comprimento</strong>4.600 mm</div>
+                <div class="ficha-item"><strong>Largura</strong>1.780 mm</div>
+                <div class="ficha-item"><strong>Altura</strong>1.420 mm</div>
+                <div class="ficha-item"><strong>Entre-eixos</strong>2.750 mm</div>
+                <div class="ficha-item"><strong>Porta-malas</strong>~ 400 litros</div>
+                <div class="ficha-item"><strong>Lugares</strong>5</div>
+                <div class="ficha-item"><strong>Peso</strong>~ 1.500 kg</div>
+            </div>
+        </section>
+
+        <section id="hibrido">
+            <h2>Tecnologia Híbrida</h2>
+            <p>O Prius é a referência mundial em tecnologia híbrida. Seu sistema combina motor a combustão e motor elétrico de forma inteligente:</p>
+
+            <ul class="timeline">
+                <li><strong>HEV (Hybrid Electric Vehicle):</strong> recarrega a bateria apenas com o motor a combustão e frenagens regenerativas. Não precisa de tomada.</li>
+                <li><strong>PHEV (Plug-in Hybrid):</strong> pode ser recarregado na tomada e tem autonomia elétrica de até 70 km.</li>
+                <li><strong>Modo EV:</strong> permite rodar apenas com eletricidade em baixas velocidades.</li>
+                <li><strong>Frenagem regenerativa:</strong> recupera energia nas desacelerações para recarregar a bateria.</li>
+            </ul>
+        </section>
+
+        <section id="seguranca">
+            <h2>Segurança e Tecnologia</h2>
+            <p>O Prius traz o pacote completo <strong>Toyota Safety Sense (TSS)</strong>:</p>
+            <ul class="timeline">
+                <li>Sistema de pré-colisão com frenagem autônoma</li>
+                <li>Controle de cruzeiro adaptativo (ACC)</li>
+                <li>Assistente de permanência em faixa</li>
+                <li>Farol alto automático</li>
+                <li>Monitor de ponto cego</li>
+                <li>Alerta de tráfego cruzado traseiro</li>
+            </ul>
+
+            <h3>Destaques de conforto e tecnologia</h3>
+            <ul class="timeline">
+                <li>Central multimídia de 12,3 polegadas (versões topo)</li>
+                <li>Painel digital de 7 polegadas</li>
+                <li>Ar-condicionado automático</li>
+                <li>Teto solar panorâmico</li>
+                <li>Carregamento sem fio para celular</li>
+                <li>Head-up display (versões topo)</li>
+            </ul>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Recordes e Curiosidades</h2>
+            <ul class="timeline">
+                <li><strong>Pioneirismo mundial:</strong> foi o <strong>primeiro carro híbrido produzido em massa</strong> da história, lançado no Japão em 1997.</li>
+                <li><strong>Marco de 6 milhões:</strong> a família Prius ultrapassou <strong>6 milhões de unidades</strong> vendidas globalmente.</li>
+                <li><strong>Redução de CO₂:</strong> estima-se que o Prius já evitou a emissão de <strong>milhões de toneladas de CO₂</strong> na atmosfera.</li>
+                <li><strong>Fama em Hollywood:</strong> diversas celebridades adotaram o Prius como símbolo de consciência ambiental, tornando-o um ícone cultural nos anos 2000.</li>
+                <li><strong>Evolução do design:</strong> o formato "gota" da 2ª geração (2003) se tornou um dos designs mais reconhecíveis da indústria automotiva.</li>
+                <li><strong>Base tecnológica:</strong> toda a linha híbrida da Toyota (Corolla Hybrid, RAV4 Hybrid, Camry Hybrid) deriva direta ou indiretamente da tecnologia desenvolvida para o Prius.</li>
+                <li><strong>Prêmios:</strong> eleito "Carro do Ano" em diversos países, incluindo Japão, EUA e Europa.</li>
+                <li><strong>Recorde de eficiência:</strong> a 5ª geração (2023) atingiu consumo combinado de até <strong>26 km/L</strong>, tornando-se um dos carros a combustão mais eficientes do mundo.</li>
+            </ul>
+        </section>
+
+        <section style="text-align: center;">
+            <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+        </section>
+
+    </div>
+
+    
+</body>
+</html>

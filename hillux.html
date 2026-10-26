@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Hilux - Todas as Informações</title>
+    <style>
+        /* Reset Básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #eb0a1e;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 0.8rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #eb0a1e;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #eb0a1e;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            color: #222;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .hero-image {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            max-height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eb0a1e;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline li {
+            margin-bottom: 1.5rem;
+            padding-left: 20px;
+            border-left: 4px solid #eb0a1e;
+        }
+
+        .timeline strong {
+            color: #eb0a1e;
+            font-size: 1.1rem;
+        }
+
+        .ficha-tecnica {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin: 1.5rem 0;
+        }
+
+        .ficha-item {
+            background: #f9f9f9;
+            border-left: 4px solid #eb0a1e;
+            padding: 12px 15px;
+            border-radius: 6px;
+        }
+
+        .ficha-item strong {
+            display: block;
+            color: #eb0a1e;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            background: #eb0a1e;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn-voltar:hover {
+            background: #222;
+        }
+
+        .destaque {
+            background: #fff8f8;
+            border-left: 4px solid #eb0a1e;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #222;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toyota Hilux</h1>
+        <p>A picape indestrutível — todas as informações</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="index.html#historia">História da Toyota</a>
+        <a href="index.html#icones">Carros Icônicos</a>
+        <a href="index.html#inovacao">Inovação</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Visão Geral -->
+        <section id="visao-geral">
+            <h2>Visão Geral</h2>
+            <div class="hero-image">
+                <img src="./imagens/images.jpg" alt="Toyota Hilux">
+            </div>
+            <p>A <strong>Toyota Hilux</strong> é uma picape média produzida pela Toyota desde <strong>1968</strong>. Seu nome vem da combinação de <em>"High"</em> + <em>"Luxury"</em>. É mundialmente famosa por sua <strong>resistência extrema</strong>, sendo considerada uma das picapes mais duráveis do planeta.</p>
+            <p>Foi eleita por programas como o <em>Top Gear</em> como "o carro mais resistente do mundo", após sobreviver a testes extremos. É amplamente usada em regiões de conflito, fazendas, mineração e expedições off-road.</p>
+            <div class="destaque">
+                <p><strong>Recorde de vendas:</strong> mais de <strong>20 milhões de unidades</strong> vendidas globalmente desde 1968, presente em mais de <strong>180 países</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Origem do Nome -->
+        <section id="nome">
+            <h2>Origem do Nome</h2>
+            <p>"Hilux" é uma combinação das palavras inglesas <strong>"High"</strong> (alto) e <strong>"Luxury"</strong> (luxo), sugerindo uma picape de alto padrão. O nome foi adotado a partir da 2ª geração (1972), substituindo o nome "Hi-Lux" usado anteriormente.</p>
+        </section>
+
+        <!-- História das Gerações -->
+        <section id="geracoes">
+            <h2>História das Gerações</h2>
+            <p>A Hilux já chegou à <strong>8ª geração</strong>, evoluindo de uma picape compacta para uma das líderes mundiais do segmento médio.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Geração</th>
+                        <th>Período</th>
+                        <th>Características Principais</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>1ª</strong></td><td>1968–1972</td><td>Lançada como "Hi-Lux", derivada do Toyoace; picape compacta de 1,5L</td></tr>
+                    <tr><td><strong>2ª</strong></td><td>1972–1978</td><td>Nome simplificado para "Hilux"; design mais robusto</td></tr>
+                    <tr><td><strong>3ª</strong></td><td>1978–1983</td><td>Primeira com tração 4x4; popularização global</td></tr>
+                    <tr><td><strong>4ª</strong></td><td>1983–1988</td><td>Design mais moderno; motores a diesel</td></tr>
+                    <tr><td><strong>5ª</strong></td><td>1988–1997</td><td>Consolidação como picape global; vendas explosivas</td></tr>
+                    <tr><td><strong>6ª</strong></td><td>1997–2005</td><td>Design arredondado; conforto de carro de passeio</td></tr>
+                    <tr><td><strong>7ª</strong></td><td>2005–2015</td><td>Maior, mais potente; líder no Brasil e Austrália</td></tr>
+                    <tr><td><strong>8ª</strong></td><td>2015–atual</td><td>Plataforma TNGA; versões GR-Sport e híbrida</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Produção Global -->
+        <section id="producao">
+            <h2>Produção Global</h2>
+            <p>A Hilux é produzida em <strong>mais de 10 países</strong>, incluindo Japão, Tailândia, África do Sul, Argentina, Brasil, Índia, Malásia e Paquistão.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>País</th>
+                        <th>Fábrica</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Japão</td><td>Hamura</td><td>Produção original desde 1968</td></tr>
+                    <tr><td>Tailândia</td><td>Samrong</td><td>Maior polo global da Hilux</td></tr>
+                    <tr><td>África do Sul</td><td>Durban</td><td>Principal base para África</td></tr>
+                    <tr><td>Argentina</td><td>Zárate</td><td>Fornece toda a América do Sul</td></tr>
+                    <tr><td><strong>Brasil</strong></td><td><strong>Sorocaba (SP)</strong></td><td><strong>Produção desde 2015</strong></td></tr>
+                    <tr><td>Índia</td><td>Bidadi</td><td>Atende mercado asiático</td></tr>
+                    <tr><td>Malásia</td><td>Shah Alam</td><td>Montagem local</td></tr>
+                    <tr><td>Paquistão</td><td>Karachi</td><td>Produção para o sul da Ásia</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Versões e Preços no Brasil -->
+        <section id="precos">
+            <h2>Versões e Preços no Brasil (2026)</h2>
+            <p>A Hilux é líder absoluta no segmento de picapes médias no Brasil há vários anos consecutivos. A linha 2026 oferece versões que vão da trabalho à esportiva.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Versão</th>
+                        <th>Motor</th>
+                        <th>Tração</th>
+                        <th>Preço (R$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>SR 2.7 Flex</strong></td><td>2.7 Flex</td><td>4x2</td><td>~ 245.000</td></tr>
+                    <tr><td><strong>SRX 2.8 Diesel</strong></td><td>2.8 Turbo Diesel</td><td>4x4</td><td>~ 320.000</td></tr>
+                    <tr><td><strong>SRX Plus 2.8 Diesel</strong></td><td>2.8 Turbo Diesel</td><td>4x4</td><td>~ 345.000</td></tr>
+                    <tr><td><strong>GR-Sport 2.8 Diesel</strong></td><td>2.8 Turbo Diesel</td><td>4x4</td><td>~ 370.000</td></tr>
+                    <tr><td><strong>GR-Sport Plus 2.8 Diesel</strong></td><td>2.8 Turbo Diesel</td><td>4x4</td><td>~ 385.000</td></tr>
+                </tbody>
+            </table>
+
+            <div class="destaque">
+                <p><strong>Observação:</strong> preços aproximados, sujeitos a alteração. Consulte o site oficial da Toyota Brasil para valores atualizados.</p>
+            </div>
+        </section>
+
+        <!-- Ficha Técnica -->
+        <section id="ficha">
+            <h2>Ficha Técnica Detalhada — Hilux 2026</h2>
+            <p>Exemplo: versão <strong>SRX Plus 2.8 Turbo Diesel 4x4</strong></p>
+
+            <h3>Motor e Desempenho</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Cilindrada</strong>2.8L Turbo Diesel</div>
+                <div class="ficha-item"><strong>Potência</strong>204 cv @ 3.400 rpm</div>
+                <div class="ficha-item"><strong>Torque</strong>500 Nm @ 1.600–2.800 rpm</div>
+                <div class="ficha-item"><strong>Câmbio</strong>Automático 6 marchas</div>
+                <div class="ficha-item"><strong>Tração</strong>4x4 com reduzida</div>
+                <div class="ficha-item"><strong>Combustível</strong>Diesel S10</div>
+            </div>
+
+            <h3>Consumo</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Cidade (diesel)</strong>~ 9,5 km/L</div>
+                <div class="ficha-item"><strong>Estrada (diesel)</strong>~ 11,5 km/L</div>
+            </div>
+
+            <h3>Dimensões e Capacidades</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Comprimento</strong>5.325 mm</div>
+                <div class="ficha-item"><strong>Largura</strong>1.855 mm</div>
+                <div class="ficha-item"><strong>Altura</strong>1.815 mm</div>
+                <div class="ficha-item"><strong>Entre-eixos</strong>3.085 mm</div>
+                <div class="ficha-item"><strong>Caçamba</strong>~ 1.000 litros</div>
+                <div class="ficha-item"><strong>Tanque</strong>80 litros</div>
+                <div class="ficha-item"><strong>Lugares</strong>5</div>
+                <div class="ficha-item"><strong>Peso</strong>~ 2.100 kg</div>
+            </div>
+
+            <h3>Chassi e Suspensão</h3>
+            <div class="ficha-tecnica">
+                <div class="ficha-item"><strong>Suspensão dianteira</strong>Independente, duplo triângulo</div>
+                <div class="ficha-item"><strong>Suspensão traseira</strong>Eixo rígido com feixe de molas</div>
+                <div class="ficha-item"><strong>Direção</strong>Hidráulica assistida</div>
+                <div class="ficha-item"><strong>Freios</strong>Discos ventilados (dianteira) / Tambor (traseira)</div>
+            </div>
+        </section>
+
+        <!-- Segurança e Tecnologia -->
+        <section id="seguranca">
+            <h2>Segurança e Tecnologia</h2>
+            <p>A Hilux traz de série o pacote <strong>Toyota Safety Sense (TSS)</strong>:</p>
+            <ul class="timeline">
+                <li>Sistema de pré-colisão com frenagem autônoma</li>
+                <li>Controle de cruzeiro adaptativo (ACC)</li>
+                <li>Assistente de permanência em faixa</li>
+                <li>Farol alto automático</li>
+                <li>7 airbags (versões topo)</li>
+                <li>Controle de estabilidade e tração</li>
+                <li>Assistente de descida (DAC)</li>
+            </ul>
+
+            <h3>Destaques de conforto e tecnologia</h3>
+            <ul class="timeline">
+                <li>Central multimídia de 8 polegadas com Android Auto / Apple CarPlay</li>
+                <li>Painel digital de 7 polegadas (versões topo)</li>
+                <li>Ar-condicionado automático dual zone</li>
+                <li>Bancos em couro</li>
+                <li>Chave presencial com partida por botão</li>
+                <li>Câmera de ré e sensores de estacionamento</li>
+            </ul>
+        </section>
+
+        <!-- Recordes e Curiosidades -->
+        <section id="curiosidades">
+            <h2>Recordes e Curiosidades</h2>
+            <ul class="timeline">
+                <li><strong>Top Gear:</strong> uma Hilux de 1988 sobreviveu a afogamento, incêndio, queda de prédio e ainda ligou — eleita "o carro mais resistente do mundo".</li>
+                <li><strong>Guerras e conflitos:</strong> usada por forças armadas e ONGs em zonas de conflito pela robustez e facilidade de manutenção.</li>
+                <li><strong>Expedições:</strong> veículo oficial de diversas expedições ao Ártico e à Antártida.</li>
+                <li><strong>Mineração:</strong> padrão em minas e fazendas por suportar condições extremas.</li>
+                <li><strong>Brasil:</strong> líder de vendas em sua categoria há mais de 10 anos consecutivos.</li>
+            </ul>
+        </section>
+
+        <section style="text-align: center;">
+            <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+        </section>
+
+    </div>
+
+   
+</body>
+</html>
